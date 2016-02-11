@@ -6,7 +6,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 RUN mkdir /var/www/crabtree && mkdir /var/www/crabtree/web
 RUN rm -rf /var/www/html
-RUN ln -ls /var/www/html /var/www/crabtree/web
+RUN ln -s /var/www/html /var/www/crabtree/web
 
 WORKDIR /var/www/crabtree
 
