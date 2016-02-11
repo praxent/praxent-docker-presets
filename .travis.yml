@@ -1,12 +1,10 @@
 language: bash
 services: docker
 env:
-- VERSION=7
-- VERSION=8
-- VERSION=edge
+- VERSION=crabtree
 before_script:
 - cd "$VERSION"
 script:
-- docker build -t "drupal-kitematic:$VERSION" .
+- docker build -t "praxent:$VERSION" .
 after_script:
 - docker images
